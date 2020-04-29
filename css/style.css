@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: auto;
+    background-color: azure;
+    font-family: 'Helvetica';
+}
+
+
+/* HEADER & NAVIGATION FIXED POSITION */
+
+
+.header {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: fixed;
+    background-color: aliceblue;
+}
+
+.header h1 {
+    position: fixed;
+    right: 20px;
+}
+
+
+
+.drop-nav {
+    position: fixed;
+    background-color: aliceblue;
+}
+
+.navbar {
+    background-color: aliceblue;
+    position: fixed;
+    width: 100%;
+    float: left;
+    padding-bottom: 5px
+}
+
+.navbar > li {
+    float: left;
+}
+
+
+.navbar a {
+    color: black;
+    display: block;
+    padding: 8px 20px 8px 4px;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li:hover {
+    background-color:beige;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:after {
+    content: "\25BC";
+    font-size: .5em;
+    display: block;
+    position: absolute;
+    top: 33%;
+    right: 12%;
+}
+
+.drop-nav {
+    position: absolute;
+    display: none;
+}
+
+
+.dropdown:hover > .drop-nav {
+    display: block;
+}
+
+
+
+/* IMAGE WITH TEXT ON TOP */
+
+.img-wrap {
+    width: 100%;
+    margin: 0;
+    
+}
+
+.img-wrap img {
+    width: 100%;
+    margin: 0;
+    display: block;
+    object-fit: cover;
+    overflow: hidden
+}
+
+.images {
+    display:block;
+	margin:0 auto;
+    width: 100%; 
+    height: 500px; 
+    object-fit:contain;
+    overflow: hidden; 
+}
+
+
+
+
+.center {
+    text-align: center;
+}
+
+.size28 {
+    font-size: 27px;
+}
+
+p {
+    text-align: justify;
+}
+
+.liststyle {
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+
+.row {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.col1 {
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 42px;
+    padding: 5px;
+    text-align: center;
+}
+
+.col1 p {
+    font-size: 28px;
+    line-height: 30px;
+}
+
+h3 {
+    font-size: 38px;
+    padding: 5px;
+    text-align: center;
+}
+
+.col2 {
+    width: 50%;
+    padding: 20px;
+}
+
+
+
+#footer {
+    padding: 10px;
+    text-align:center;
+    font-size: 16px;
+}
+
+hr {
+    padding: 2px
+}
+
+#footer p {
+    text-align: center;
+}
+
+/* grid */
+
+.grid-container {
+    padding: 5%;
+    padding-top: 50px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+}
+
+.grid-container a {
+    text-decoration: none;
+    color: deeppink;
+}
+
+.grid-item1 {
+    grid-column: 1 / 3;
+    text-align: center;
+    font-size: 38px;
+}
+
+.grid-item3,
+.grid-item5,
+.grid-item7,
+.grid-item9,
+.grid-item11, a {
+    text-align: center;
+}
+
+
+/* TABLE */
+
+#apps {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#apps td,
+#apps th {
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+#apps tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+#apps th {
+    padding: 50px 10px 15px 10px;
+    text-align: left;
+    
+}
+
+
+
+/* FORM */
+
+form, .results {
+    position: relative;
+    top: 50px;
+    width: 50%; 
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    background: aquamarine;
+    background: linear-gradient(0deg, pink 0%, lightcyan 100%);
+}
+
+fieldset {
+    background-color:lightcyan;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 28px;
+    color: #2f4c73;
+    background-color: lightpink;
+    padding: 2px 4px;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+}
+
+.instructions {
+    font-style: italic;
+}
+
+.div1,
+.div2 {
+    margin: 12px 0px 12px 0px;
+}
+
+
+.div1 input {
+    position: absolute;
+    left: 200px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+textarea {
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+buttons {
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+buttons:hover {
+    background-color: pink;
+}
+
+.leftbutton,
+.rightbutton {
+    width: 50%;
+    float: left;
+}
+
+#submit {
+    float: right;
+}
+
+.sitemap {
+    padding: 50px 10px 10px;
+}
+
+.sitemap ul{
+    padding: 5px 20px
+}

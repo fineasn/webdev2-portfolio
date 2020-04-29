@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Userdata</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+    <header class="header">
+
+
+        <ul class="navbar">
+
+            <li><a href="index.html" class="nav-item button">HOME</a></li>
+
+            <li class="dropdown">
+                <a href="apps.html" class="nav-item button">APPS</a>
+
+                <ul class="drop-nav">
+                    <li><a href="instagram.html" class="nav-item button">INSTAGRAM</a></li>
+                    <li><a href="snapchat.html" class="nav-item button">SNAPCHAT</a></li>
+                    <li><a href="twitter.html" class="nav-item button">TWITTER</a></li>
+                    <li><a href="whatsapp.html" class="nav-item button">WHATSAPP</a></li>
+                    <li><a href="facebook.html" class="nav-item button">FACEBOOK</a></li>
+                </ul>
+
+            </li>
+
+            <li><a href="contact.html" class="nav-item button">CONTACT US</a></li>
+
+            <li><a href="resources.html" class="nav-item button">RESOURCES</a></li>
+
+        </ul>
+
+        <h1>Social Media Learning</h1>
+
+    </header>
+    
+    
+    <div class="results">
+        
+        <br><br><br>
+        <h2>Your Form has been sent!</h2>
+        <p>The information you have submitted has been received, Thank You. We will process the information and get back to you with a reply soon!</p>
+        
+        <h4 class="center">Here is your Submitted Data:</h4>
+        
+        <div id="userdata"></div>
+        
+        <p><a href="contact.html">Return to Registration page</a></p>
+        
+        
+    </div>
+    
+    <script>
+        
+        const dataList = document.getElementById("userdata")
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+            dataList.append(`${name}: ${value}`)
+            dataList.append(document.createElement('br'))
+        })  
+    
+    </script> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</body>
+
+</html>
